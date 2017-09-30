@@ -1,0 +1,111 @@
+.call-to-action-section{
+	width: 100%;
+	height: 15.98vw;
+	background: url(../images/bottom-background.png) no-repeat;
+    background-size: 100%, cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.call-to-action-section__button{
+	width: 51.667%;
+	height: 29.508%;
+	color: #ffffff;
+	background-color: #2ebaa7;
+	border-radius: 1vw;
+	font-weight: 400;
+	font-size: 1.5vw;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 0.07vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.footer{
+	width: 100%;
+	height: 15vw;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer__inner-container{
+	width: 90%;
+	height: 60%;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.footer__copyright{
+	height: 85%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.footer__logo-icon{
+	width: 9.8vw;
+}
+.footer__copyright-text{
+	font-weight: 300;
+	font-size: 1.2vw;
+	color:  #092327;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.footer__requisites-container{
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	font-weight: 300;
+	font-size: 1.2vw;
+	color:  #092327;
+	font-family: 'Roboto', sans-serif;
+}
+.footer__requisites-number{
+	font-weight: 300;
+	font-size: 1.2vw;
+	color:  #092327;
+	font-family: 'Roboto', sans-serif;
+}
+.footer__agreements-container{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.footer__public-offer{
+	font-weight: 300;
+	font-size: 1.2vw;
+	color:  #092327;
+}
+.footer__service-agreement{
+	font-weight: 300;
+	font-size: 1.2vw;
+	color:  #092327;
+
+}
+.footer__social-container{
+	height: 100%;
+	width: 19%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.footer__join-us{
+	width: 100%;
+	font-weight: 300;
+	font-size: 2vw;
+	color:  #092327;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
+}
+.footer__social-icon{
+	height: 30%;
+}

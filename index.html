@@ -4,310 +4,427 @@
 	<meta charset="UTF-8">
 	<title>Звыш - уборка квартир и коттеджей в Солигорске </title>
 	<script src="https://use.fontawesome.com/c147325467.js"></script>
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/header.css">
 </head>
-<body>
+<body class="page page_theme_appartment">
 	<div class="wrapper">
-		<section class="main-page">
-			<header class="header">
-				<div class="logo">
-					<img class="logo__icon" src="images/main_logo_colorfull.png" alt="Логотип сервиса Звыш" />
-				</div>
+		<section class="main-section">
+			<div class="main-seсtion__inner-container">  
+				<header class="header">
+					<div class="header__inner-container">
+					
+						<div class="logo">
+							<div class="logo__inner-container">
+								<img class="logo__icon" role="img" src="images/main_logo_colorfull.png" alt="Логотип сервиса Звыш"/>
+							</div>
+						</div>
 
-				<div class="zvysh-description">
-					<h2 class="zvysh-description__text">Сервис по уборке</h2>
-					<div class="zvysh-description__location">
-						<i class="fa fa-map-marker zvysh-description__location-icon" aria-hidden="true"></i>
-						<p class="zvysh-description__location-name">г.Солигорск</p>
+						<div class="zvysh-description">
+							<div class="zvysh-description__inner-container">
+								<h2 class="zvysh-description__text">Сервис по уборке</h2>
+								<div class="zvysh-description__location">
+									<i class="zvysh-description__location-icon fa fa-map-marker" aria-hidden="true"></i>
+									<h2 class="zvysh-description__text zvysh-description__text_bottom">Солигорск</h2>
+								</div>
+							</div>
+						</div>
+
+						<div class="navigation">
+							<div class="navigation__inner-container">
+								<div class="navigation__element">
+									<a class="navigation__element-name navigation__element-name_active" href="#">квартира</a>
+								</div>
+								<div class="navigation__element">
+									<a class="navigation__element-name" href="#">коттедж</a>
+								</div>
+								<div class="navigation__element">
+									<a class="navigation__element-name" href="#">окна</a>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="phone-number">
+							<div class="phone-number__inner-container">
+								<i class="phone-number__icon fa fa-phone" aria-hidden="true"></i>
+								<a class="phone-number__text" href=”tel:+375333891376″>+375 (33) 389-13-76</a>
+							</div>
+						</div>
+
+						<div class="sign-in">
+							<div class="sign-in__inner-container">
+								<a class="sign-in__text" href="#" >Войти</a>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<div class="headlines">
+					<div class="headlines__inner-container">
+						<h1 class="headlines__main-headline">Уборка — не Ваше дело</h1>
+						<h2 class="headlines__second-headline">Доверьте ее профессионалам Звыш</h2>
 					</div>
 				</div>
 
-				<div class="navigation">
-					<div class="navigation__element">
-						<p class="navigation__element-name">квартира</p>
-					</div>
-					<div class="navigation__element">
-						<p class="navigation__element-name">коттедж</p>
-					</div>
-					<div class="navigation__element">
-						<p class="navigation__element-name">окна</p>
-					</div>
-				</div>
+				<div class="calculator">
+					<div class="calculator__inner-container">
 
-				<div class="phone-number">
-					<i class="fa fa-phone phone-number__icon" aria-hidden="true"></i>
-					<a class="phone-number__number" href=”tel:+375333891376″>+375 (33) 389-13-76</a>
-				</div>
+						<div class="calculator__button-block">
+							<div class="calculator__button-block-inner-container">
+								<div class="calculator__button-block-button">–</div>
+								<div class="calculator__button-block-text">1 комната</div> 
+								<div class="calculator__button-block-button">+</div>
+							</div>
+						</div>
 
-				<div class="sign-in">
-					<a class="sign-in__text" href="#" >Войти</a>
-				</div>
-			</header>
-			<div class="headlines">
-				<h1 class="headlines__main-headline">Уборка — не Ваше дело</h1>
-				<h2 class="headlines__second-headline">Доверьте ее профессионалам Звыш</h2>
-			</div>
+						<div class="calculator__button-block">
+							<div class="calculator__button-block-inner-container">
+								<div class="calculator__button-block-button">–</div>
+								<div class="calculator__button-block-text">1 санузел</div> 
+								<div class="calculator__button-block-button">+</div>
+							</div>
+						</div>
 
-			<div class="calculator">
+						<div class="calculator__button-block calculator__button-block_makeorder-style">
+							<div class="calculator__button-block-inner-container">
+								<div class="calculator__button-block-text calculator__button-block-text_makeorder-style">Заказать уборку от 28р</div> 
+							</div>
+						</div>
 
-				<div class="calculator__button-section">
-					<div class="calculator__button">
-					-
 					</div>
-					<div class="calculator__text">комната</div>  <!--скрипт, вписывающий кол-во комнат (кол-во меняется кнопками "+" и "-"-->
-					<div class="calculator__button">
-					+
-					</div>
-				</div>
-
-				<div class="calculator__button-section">
-					<div class="calculator__button">
-					-
-					</div>
-					<div class="calculator__text">санузел</div>  <!--скрипт, вписывающий кол-во санузлов (кол-во меняется кнопками "+" и "-"-->
-					<div class="calculator__button">
-					+
-					</div>
-				</div>
-
-				<div class="calculator__button calculator__button_makeorder-style">
-					<div class="calculator__text calculator__text_makeorder-style">Заказать уборку от</div>  <!--Нужен скрипт по расчёту стоимости для поддерживиющей уборки при выбранномкол-ве комнат и санузлов-->
 				</div>
 			</div>
 		</section>
 
-		<section class="relax-page">
-			<h3 class="page-headline">Отдыхайте! Чистоту дома мы возьмём на себя</h3>
-			<div class="history-container">
-				<div class="relax-page-block">
-					<img class="relax-page-block__image src="#" alt="" /> <!--Будут картинки от златы-->
-					<p class="relax-page-block__text">Вы хотите проводить время с семьёй или за любимым делом</p>
-				</div>
-				<div class="relax-page-block">
-					<img class="relax-page-block__image src="#" alt="" /> <!--Будут картинки от златы-->
-					<p class="relax-page-block__text">Уборка в доме никак не вписывается в Ваши планы</p>
-				</div>
-				<div class="relax-page-block">
-					<img class="relax-page-block__image src="#" alt="" /> <!--Будут картинки от златы-->
-					<p class="relax-page-block__text">Мы подарим Вам чистоту и свободное время на родных и близких!</p>
-				</div>
-			</div>
+		<section class="relax-section">
+			<div class="relax-section__inner-container">
+				<h3 class="relax-section__headline">Отдыхайте! Чистоту дома мы возьмём на себя</h3>
+				<div class="history-container">
+					<div class="relax-section-block">
+						<div class="relax-section-block__inner-container">
+							<img class="relax-section-block__image src="#" alt="" /> <!--Будут картинки от златы-->
+							<p class="relax-section-block__text">Вы хотите проводить время с семьёй или за любимым делом</p>
+						</div>
+					</div>
+					<div class="relax-section-block">
+						<div class="relax-section-block__inner-container">
+							<img class="relax-section-block__image src="#" alt="" /> <!--Будут картинки от златы-->
+							<p class="relax-section-block__text">Уборка в доме никак не вписывается в Ваши планы</p>
+						</div>
+					</div>
 
-			<div class="evaluation-line"></div> <!--Линия с кружочками, которую злата немного доделает-->
+					<div class="relax-section-block">
+						<div class="relax-section-block__inner-container">						
+							<img class="relax-section-block__image src="#" alt="" /> <!--Будут картинки от златы-->
+							<p class="relax-section-block__text">Мы подарим Вам чистоту и свободное время на родных и близких!</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="evaluation-line"></div> <!--Линия с кружочками, которую злата немного доделает-->
+			</div>
 		</section>
 
-		<section class="trust-page">
-			<h3 class="page-headline">На Звыш можно положиться</h3>
+		<section class="trust-section">
+			<div class="trust-section__inner-container">
 
-			<div class="trust-arguments-container">
+				<h3 class="trust-section__headline">На Звыш можно положиться</h3>
+				<div class="trust-arguments-block">
+					<div class="trust-arguments-inner-container">
 
-				<div class="animation-block">
-					<div class="animation-block__block-stable animation-block__block-safety"> <!--Постоянно отображается-->
-						<p class="animation-block__title">БЕЗОПАСНОСТЬ</p>
-					</div>
-					<div class="animation-block__block-hover"> <!--Отображается поверх animation-block__block-stable при наведении-->
-						<p class="animation-block__title animation-block__title_hover">БЕЗОПАСНОСТЬ</p>
-						<hr class="animation-block__line" />
-						<p class="animation-block__text-content">Наши домработницы ничего не воруют и не ломают. Они прошли тщательный отбор, профессиональное обучение и стажировку. Им можно доверять.</p>
+						<div class="animation-block">
+							<div class="animation-block__inner-container animation-block__inner-container-safety">
+								<div class="animation-block__inner-container-stable">
+									<p class="animation-block__title">БЕЗОПАСНОСТЬ</p>
+								</div>
+							</div>
+							<!--<div class="animation-block__block-hover"> 
+									<div class="animation-block__inner-container-hover">
+										<p class="animation-block__title animation-block__title_hover">БЕЗОПАСНОСТЬ</p>
+										<hr class="animation-block__line" />
+										<p class="animation-block__text-content">Наши домработницы ничего не воруют и не ломают. Они прошли тщательный отбор, профессиональное обучение и стажировку. Им можно доверять.</p>
+									</div>
+								</div>-->
+						</div>
+						<div class="animation-block">
+							<div class="animation-block__inner-container animation-block__inner-container-quality">
+								<div class="animation-block__inner-container-stable">
+									<p class="animation-block__title">КАЧЕСТВО</p>
+								</div>
+							</div>
+							<!--<div class="animation-block__block-hover"> 
+									<div class="animation-block__inner-container-hover">
+										<p class="animation-block__title animation-block__title_hover">БЕЗОПАСНОСТЬ</p>
+										<hr class="animation-block__line" />
+										<p class="animation-block__text-content">Наши домработницы ничего не воруют и не ломают. Они прошли тщательный отбор, профессиональное обучение и стажировку. Им можно доверять.</p>
+									</div>
+								</div>-->
+						</div>
+						<div class="animation-block">
+							<div class="animation-block__inner-container animation-block__inner-container-eco">
+								<div class="animation-block__inner-container-stable">
+									<p class="animation-block__title">ЭКОЛОГИЧНОСТЬ</p>
+								</div>
+							</div>
+							<!--<div class="animation-block__block-hover"> 
+									<div class="animation-block__inner-container-hover">
+										<p class="animation-block__title animation-block__title_hover">БЕЗОПАСНОСТЬ</p>
+										<hr class="animation-block__line" />
+										<p class="animation-block__text-content">Наши домработницы ничего не воруют и не ломают. Они прошли тщательный отбор, профессиональное обучение и стажировку. Им можно доверять.</p>
+									</div>
+								</div>-->
+						</div>
+
+
+
+
+
 					</div>
 				</div>
-
-				<div class="animation-block">
-					<div class="animation-block__block-stable animation-block__block-stable_quality"> <!--Постоянно отображается-->
-						<p class="animation-block__title">КАЧЕСТВО</p>
-					</div>
-					<div class="animation-block__block-hover"> <!--Отображается поверх animation-block__block-stable при наведении-->
-						<p class="animation-block__title animation-block__title_hover">КАЧЕСТВО</p>
-						<hr class="animation-block__line" />
-						<p class="animation-block__text-content">Мы работаем с итальянским инвентарём по отельной технологии. Это делает нашу уборку первоклассной. Но если что-то пошло не так, мы переделаем бесплатно.</p>
-					</div>
-				</div>
-
-				<div class="animation-block">
-					<div class="animation-block__block-stable animation-block__block-stable_eco"> <!--Постоянно отображается-->
-						<p class="animation-block__title">ЭКОЛОГИЧНОСТЬ</p>
-					</div>
-					<div class="animation-block__block-hover"> <!--Отображается поверх animation-block__block-stable при наведении-->
-						<p class="animation-block__title animation-block__title_hover">КАЧЕСТВО</p>
-						<hr class="animation-block__line" />
-						<p class="animation-block__text-content">В арсенале домработниц Звыш только профессиональная косметика для дома. Она гиппоаллергенна и безопасна для Вашей семьи и питомцев.</p>
-					</div>
-				</div>
-
 			</div>
-
-
 		</section>
 
-		<section class="cleaning-set-page">
-			<h3 class="page-headline">Что входит в уборку от Звыш</h3>
+		<section class="cleaning-set-section">
+			<div class="cleaning-set-section__inner-container">
+				<h3 class="cleaning-set-section__headline">Что входит в уборку от Звыш</h3>
 			<!--Я пока не придумал, как это реализовать-->
-			<div class="more-info-button">
-				<p class="more-info-button__text">Полный список</p>
-			</div>
+				<div class="more-info-button">
+					<div class="more-info-button__inner-container">
+						<p class="more-info-button__text">Полный список</p>
+					</div>
+				</div>
 		</section>
 
-		<section class="best-cleaners">
-			<h3 class="page-headline">Наши лучшие домработницы</h3>
+		<section class="cleaners-section">
+			<div class="cleaners-section__inner-container">
+				<h3 class="cleaners-section__headline">Наши лучшие домработницы</h3>
+					<div class="best-cleaners-container">
 
-			<div class="best-cleaners-container">
-				<div class="animation-block">
-					<div class="animation-block__block-stable animation-block__block-stable_first"> <!--Постоянно отображается-->
-						<p class="animation-block__cleaner-name">Валентина</p>
-					</div>
-					<div class="animation-block__block-hover"> <!--Отображается поверх animation-block__block-stable при наведении-->
-						<p class="animation-block__cleaner-name animation-block__cleaner-name_hover">Валентина</p>
-						<hr class="animation-block__line" />
-						<p class="animation-block__text-content">Валентина распиздатая охуенная старуха очень любит драить за бесплатно а еще  .</p>
-					</div>
-				</div>
-
-				<div class="animation-block">
-					<div class="animation-block__block-stable animation-block__block-stable_second"> <!--Постоянно отображается-->
-						<p class="animation-block__cleaner-name">Людмила</p>
-					</div>
-					<div class="animation-block__block-hover"> <!--Отображается поверх animation-block__block-stable при наведении-->
-						<p class="animation-block__cleaner-name animation-block__cleaner-name_hover">Людмила</p>
-						<hr class="animation-block__line" />
-						<p class="animation-block__text-content">Людмила распиздатая охуенная маладуха очень любит драить за бесплатно а еще  .</p>
-					</div>
-				</div>
-
-				<div class="animation-block">
-					<div class="animation-block__block-stable animation-block__block-stable_third"> <!--Постоянно отображается-->
-						<p class="animation-block__cleaner-name">Наталия</p>
-					</div>
-					<div class="animation-block__block-hover"> <!--Отображается поверх animation-block__block-stable при наведении-->
-						<p class="animation-block__cleaner-name animation-block__cleaner-name_hover">Наталия</p>
-						<hr class="animation-block__line" />
-						<p class="animation-block__text-content">Наталия распиздатая охуенная маладуха очень любит драить за бесплатно а еще  .</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="more-info-button">
-				<p class="more-info-button__text">Как мы подбираем персонал</p>
-			</div>
-		</section>
-
-		<section class="faq">
-			<h3 class="page-headline">Вопросы и ответы</h3>
-			<div class="faq-container">
-				<div class="question-answer-block">
-					<div class="question-answer-block__quastion-row">
-						<p class="question-answer-block__quastion-text">Нужно ли быть дома во время уборки от Звыш?</p>
-						<i class="question-answer-block__quastion-navigation fa fa-angle-down" aria-hidden="true""></i>
-					</div> 
-					<div class="question-answer-block__answer-row">
-						<p class="question-answer-block__answer-text">Наши пользователи чаще всего остаются дома, когда заказывают уборку от Звыш впервые. Но уже в следующий раз они с лёгкостью оставляют домработницу одну, чтобы заняться своими делами. Более того, домработница с радостью доставит ключи в любое место в черте города.</p>
-						<i class="question-answer-block__quastion-navigation fa fa-angle-up" aria-hidden="true""></i>
+					<div class="animation-block">
+						<div class="animation-block__block-stable animation-block__block-stable_first-cleaner"> <!--Постоянно отображается-->
+							<div class="animation-block__inner-container_first-cleaner">
+								<p class="animation-block__cleaner-name">Валентина</p>
+							</div>
+						</div>
+						<div class="animation-block__block_hover"> <!--Отображается поверх animation-block__block-stable при наведении-->
+							<div class="animation-block__inner-container_hover">
+								<p class="animation-block__cleaner-name animation-block__cleaner-name_hover">Валентина</p>
+								<hr class="animation-block__line" />
+								<p class="animation-block__text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit expedita unde sint ab saepe ducimus provident fuga modi, blanditiis.</p>
+							</div>
+						</div>
 					</div>
 
-					<div class="question-answer-block__quastion-row">
-						<p class="question-answer-block__quastion-text">Будет ли у домработницы всё необходимое для уборки?</p>
-						<i class="question-answer-block__quastion-navigation fa fa-angle-down" aria-hidden="true""></i>
-					</div> 
-					<div class="question-answer-block__answer-row">
-						<p class="question-answer-block__answer-text">Да, наши домработницы привезут с собой весь инвентарь и профессиональную косметику для уборки квартиры. Даже пылесос. Но если у Вас есть свой пылесос и Вы не против, чтобы мы им воспользовались, сообщите нам. При заказе на сайте поставьте галочку в графе “у меня есть пылесос” и мы подарим Вам приятный бонус.</p>
-						<i class="question-answer-block__quastion-navigation fa fa-angle-up" aria-hidden="true""></i>
+					<div class="animation-block">
+						<div class="animation-block__block-stable animation-block__block-stable_first-cleaner"> <!--Постоянно отображается-->
+							<div class="animation-block__inner-container_first-cleaner">
+								<p class="animation-block__cleaner-name">Наталия</p>
+							</div>
+						</div>
+						<div class="animation-block__block_hover"> <!--Отображается поверх animation-block__block-stable при наведении-->
+							<div class="animation-block__inner-container_hover">
+								<p class="animation-block__cleaner-name animation-block__cleaner-name_hover">Наталия</p>
+								<hr class="animation-block__line" />
+								<p class="animation-block__text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus necessitatibus expedita nostrum ad, quasi aspernatur ipsam similique.</p>
+							</div>
+						</div>
 					</div>
 
-					<div class="question-answer-block__quastion-row">
-						<p class="question-answer-block__quastion-text">Делаете ли вы уборку после ремонта? Химчистку ковров и мебели? Моете ли потолок?</p>
-						<i class="question-answer-block__quastion-navigation fa fa-angle-down" aria-hidden="true""></i>
-					</div> 
-					<div class="question-answer-block__answer-row">
-						<p class="question-answer-block__answer-text">К сожалению, сейчас мы не можем по-настоящему качественно убирать после ремонта, делать химчистку ковров и мебели, а также выводить трудные пятна и мыть потолки. Поэтому, такие услуги мы пока не оказываем. Но активно ищем решение и скоро порадуем Вас.</p>
-						<i class="question-answer-block__quastion-navigation fa fa-angle-up" aria-hidden="true""></i>
-					</div>
-
-					<div class="question-answer-block__quastion-row">
-						<p class="question-answer-block__quastion-text">Я заказал(-а) уборку. Кто приедет ко мне убираться?</p>
-						<i class="question-answer-block__quastion-navigation fa fa-angle-down" aria-hidden="true""></i>
-					</div> 
-					<div class="question-answer-block__answer-row">
-						<p class="question-answer-block__answer-text">Все домработницы из команды Звыш прошли тщательный отбор. Мы обучили их всем тонкостям профессиональной уборки и провели комплексное тестирование. Кроме того, попросили предоставить справку об отсутствии судимости. В зависимости от величины заказа мы направим к Вам одну, две или три профессиональные домработницы. В день уборки мы пришлём смс с именами домработниц, которые приедут к Вам со всем необходимым. Отдыхайте и наслаждайтесь чистотой!</p>
-						<i class="question-answer-block__quastion-navigation fa fa-angle-up" aria-hidden="true""></i>
+					<div class="animation-block">
+						<div class="animation-block__block-stable animation-block__block-stable_first-cleaner"> <!--Постоянно отображается-->
+							<div class="animation-block__inner-container_first-cleaner">
+								<p class="animation-block__cleaner-name">Людмила</p>
+							</div>
+						</div>
+						<div class="animation-block__block_hover"> <!--Отображается поверх animation-block__block-stable при наведении-->
+							<div class="animation-block__inner-container_hover">
+								<p class="animation-block__cleaner-name animation-block__cleaner-name_hover">Людмила</p>
+								<hr class="animation-block__line" />
+								<p class="animation-block__text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic blanditiis vel doloribus pariatur, sunt quod.</p>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-
-			<div class="more-info-button">
-				<p class="more-info-button__text">Полный список</p>
-			</div>
-
-		</section>
-
-		<section class="operation-process">
-			<h3 class="page-headline">Как мы работаем</h3>
-			<div class="processing-blocks-container">
-				<i class="processing-blocks-navigation  fa fa-angle-left" aria-hidden="true""></i>
-
-				<div class="processing-block"> <!--один из трёх блоков-->
-					<img class="processing-block__image" src="#" alt="">
-					<p class="processing-info-block__headline">Оставьте заявку</p>
-					<p class="processing-info-block__text-content">Укажите параметры уборки на сайте или по телефону +375 (33) 389-13-76</p>
-				</div>
-
-				<i class="processing-blocks-navigation  fa fa-angle-left" aria-hidden="true""></i>
-			</div>
-		</section>
-
-		<section class="feedback">
-			<h3 class="page-headline">Отзывы наших первых пользователей</h3>
-			<div class="feedback-blocks-container">
-				<div class="feedback-block">
-					<img class="feedback-block__photo" src="#" alt="">
-					<p class="feedback-block__name">Lorem Ipsum</p>
-					<p class="feedback-block__text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugiat esse voluptates nemo ex, officia nesciunt delectus odit reprehenderit temporibus.</p>
-				</div>
-
-				<div class="feedback-block">
-					<img class="feedback-block__photo" src="#" alt="">
-					<p class="feedback-block__name">Lorem Ipsum</p>
-					<p class="feedback-block__text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugiat esse voluptates nemo ex, officia nesciunt delectus odit reprehenderit temporibus.</p>
-				</div>
-
-				<div class="feedback-block">
-					<img class="feedback-block__photo" src="#" alt="">
-					<p class="feedback-block__name">Lorem Ipsum</p>
-					<p class="feedback-block__text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugiat esse voluptates nemo ex, officia nesciunt delectus odit reprehenderit temporibus.</p>
+				<div class="more-info-button">
+					<div class="more-info-button__inner-container">
+						<p class="more-info-button__text">Полный список</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="bottom-calculator">
-			<div class="calculator">
-				<div class="calculator__button calculator__button_makeorder-style">
-					<div class="calculator__text calculator__text_makeorder-style">Уборка квартиры от 28 рублей</div>
-				</div>
+		<section class="faq-section">
+			<div class="faq-section__inner-container"> 
+				<h3 class="faq-section__headline">Вопросы и ответы</h3>
+				
+				<div class="faq-container">
+					<div class="question-answer-block">
+						<div class="question-answer-block__inner-container">
 
+							<div class="question-answer-block__quastion">
+								<div class="question-answer-block__inner-container-quastion">
+									<p class="question-answer-block__quastion-text">Нужно ли быть дома во время уборки от Звыш?</p>
+									<i class="question-answer-block__quastion-navigation fa fa-angle-down" aria-hidden="true""></i>
+								</div> 
+							</div>
+							<div class="question-answer-block__answer">
+								<div class="question-answer-block__inner-container-answer">
+									<p class="question-answer-block__answer-text">Наши пользователи чаще всего остаются дома, когда заказывают уборку от Звыш впервые. Но уже в следующий раз они с лёгкостью оставляют домработницу одну, чтобы заняться своими делами. Более того, домработница с радостью доставит ключи в любое место в черте города.</p>
+									<i class="question-answer-block__quastion-navigation fa fa-angle-up" aria-hidden="true""></i>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="question-answer-block">
+						<div class="question-answer-block__inner-container">
+
+							<div class="question-answer-block__quastion">
+								<div class="question-answer-block__inner-container-quastion">
+									<p class="question-answer-block__quastion-text">Будет ли у домработницы всё необходимое для уборки?</p>
+									<i class="question-answer-block__quastion-navigation fa fa-angle-down" aria-hidden="true""></i>
+								</div> 
+							</div>
+							<div class="question-answer-block__answer">
+								<div class="question-answer-block__inner-container-answer">
+									<p class="question-answer-block__answer-text">Да, наши домработницы привезут с собой весь инвентарь и профессиональную косметику для уборки квартиры. Даже пылесос. Но если у Вас есть свой пылесос и Вы не против, чтобы мы им воспользовались, сообщите нам. При заказе на сайте поставьте галочку в графе “у меня есть пылесос” и мы подарим Вам приятный бонус.</p>
+									<i class="question-answer-block__quastion-navigation fa fa-angle-up" aria-hidden="true""></i>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="question-answer-block">
+						<div class="question-answer-block__inner-container">
+
+							<div class="question-answer-block__quastion">
+								<div class="question-answer-block__inner-container-quastion">
+									<p class="question-answer-block__quastion-text">Делаете ли вы уборку после ремонта? Химчистку ковров и мебели? Моете ли потолок?</p>
+									<i class="question-answer-block__quastion-navigation fa fa-angle-down" aria-hidden="true""></i>
+								</div> 
+							</div>
+							<div class="question-answer-block__answer">
+								<div class="question-answer-block__inner-container-answer">
+									<p class="question-answer-block__answer-text">К сожалению, сейчас мы не можем по-настоящему качественно убирать после ремонта, делать химчистку ковров и мебели, а также выводить трудные пятна и мыть потолки. Поэтому, такие услуги мы пока не оказываем. Но активно ищем решение и скоро порадуем Вас.</p>
+									<i class="question-answer-block__quastion-navigation fa fa-angle-up" aria-hidden="true""></i>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="question-answer-block">
+						<div class="question-answer-block__inner-container">
+
+							<div class="question-answer-block__quastion">
+								<div class="question-answer-block__inner-container-quastion">
+									<p class="question-answer-block__quastion-text">Я заказал(-а) уборку. Кто приедет ко мне убираться?</p>
+									<i class="question-answer-block__quastion-navigation fa fa-angle-down" aria-hidden="true""></i>
+								</div> 
+							</div>
+							<div class="question-answer-block__answer">
+								<div class="question-answer-block__inner-container-answer">
+									<p class="question-answer-block__answer-text">Все домработницы из команды Звыш прошли тщательный отбор. Мы обучили их всем тонкостям профессиональной уборки и провели комплексное тестирование. Кроме того, попросили предоставить справку об отсутствии судимости. В зависимости от величины заказа мы направим к Вам одну, две или три профессиональные домработницы. В день уборки мы пришлём смс с именами домработниц, которые приедут к Вам со всем необходимым. Отдыхайте и наслаждайтесь чистотой!</p>
+									<i class="question-answer-block__quastion-navigation fa fa-angle-up" aria-hidden="true""></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="more-info-button">
+					<div class="more-info-button__inner-container">
+						<p class="more-info-button__text">Полный список</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="processing-section">
+			<div class="processing-section__inner-container">
+				<h3 class="processing-section__headline">Как мы работаем</h3>
+				<div class="processing-blocks-container">
+					<i class="processing-blocks-navigation  fa fa-angle-left" aria-hidden="true""></i>
+					<div class="processing-block"> <!--один из трёх блоков-->
+						<div class="processing-block__inner-container">
+							<img class="processing-block__image" src="#" alt="">
+							<p class="processing-info-block__headline">Оставьте заявку</p>
+							<p class="processing-info-block__text-content">Укажите параметры уборки на сайте или по телефону +375 (33) 389-13-76</p>
+						</div>	
+					</div>
+					<i class="processing-blocks-navigation  fa fa-angle-right" aria-hidden="true""></i>
+				</div>
+			</div>
+		</section>
+
+		<section class="feedback-section">
+			<div class="feedback-section__inner-container">
+				<h3 class="feedback-section__headline">Отзывы наших первых пользователей</h3>
+				<div class="feedback-blocks-container">
+					<div class="feedback-block">
+						<div class="feedback-block__inner-container">
+							<img class="feedback-block__photo" src="#" alt="">
+							<p class="feedback-block__name">Lorem Ipsum</p>
+							<p class="feedback-block__text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugiat esse voluptates nemo ex, officia nesciunt delectus odit reprehenderit temporibus.</p>
+						</div>
+					</div>
+					<div class="feedback-block">
+						<div class="feedback-block__inner-container">
+							<img class="feedback-block__photo" src="#" alt="">
+							<p class="feedback-block__name">Lorem Ipsum</p>
+							<p class="feedback-block__text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugiat esse voluptates nemo ex, officia nesciunt delectus odit reprehenderit temporibus.</p>
+						</div>
+					</div>
+					<div class="feedback-block">
+						<div class="feedback-block__inner-container">
+							<img class="feedback-block__photo" src="#" alt="">
+							<p class="feedback-block__name">Lorem Ipsum</p>
+							<p class="feedback-block__text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugiat esse voluptates nemo ex, officia nesciunt delectus odit reprehenderit temporibus.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bottom-calculator-section">
+			<div class="bottom-calculator-section__inner-container">
+				<div class="ncalculator">
+					<div class="calculator__button calculator__button_makeorder-style">
+						<div class="calculator__text calculator__text_makeorder-style">Уборка квартиры от 28 рублей</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<footer class="footer">
-		 	<div class="logo footer__logo">
-				<img class="logo__icon" src="images/main_logo_colorfull.png" alt="Логотип сервиса Звыш" />
-				<p class="footer__copyright">© 2017 </p>
-			</div>
-			<div class="footer__requisites">
-				ИП Черноокий Е.И. УНП 691988448 <a class="requisites__number" href=”tel:+375333891376″>+375 (33) 389-13-76</a> feedback@zvysh.by
-			</div>
-			<div class="footer__agreements">
-				<a class="footer__public-offer" href="#" target="_blank">Публичный договор оферты</a>
-				<a class="footer__service-agreement" href="#" target="_blank">Договор на оказание услуг</a>шо
-			</div>
-			<div class="footer__social-container">
-				<a class="link" target="_blank" href="https://vk.com/zvysh">
-                	<i class="fa fa-vk icon" aria-hidden="true"></i>
-       			</a>
-              	<a class="link" target="_blank" href="https://www.facebook.com/zvysh">
-                	<i class="fa fa-facebook icon" aria-hidden="true"></i>
-              	</a>
-              	<a class="link" target="_blank" href="https://ok.ru/group/53359058288782">
-                	<i class="fa fa-odnoklassniki icon" aria-hidden="true"></i>
-              	</a>
+			<div class="footer__inner-container">
+				<div class="footer__copyright">
+					<div class="footer__copyright-container">
+						<img class="logo__icon" src="images/main_logo_colorfull.png" alt="Логотип сервиса Звыш" />
+						<p class="footer__copyright-text">© 2017</p>
+					</div>
+				</div>
+				<div class="footer__requisites-container">
+					<p class="footer__requisites-text">ИП Черноокий Е.И.</p>
+					<p class="footer__requisites-text">УНП 691988448</p>
+					<a class="footer__requisites-number" href=”tel:+375333891376″>+375 (33) 389-13-76</a> 					<<p class="footer__requisites-text">feedback@zvysh.by</p>
+				</div>
+				<div class="footer__agreements-container">
+						<a class="footer__public-offer" href="#" target="_blank">Публичный договор оферты</a>
+						<a class="footer__service-agreement" href="#" target="_blank">Договор на оказание услуг</a>шо
+				</div>
+				<div class="footer__social-container">
+					<a class="link" target="_blank" href="https://vk.com/zvysh">
+	              		<i class="fa fa-vk icon" aria-hidden="true"></i>
+	       			</a>
+	            	<a class="link" target="_blank" href="https://www.facebook.com/zvysh">
+	               		<i class="fa fa-facebook icon" aria-hidden="true"></i>
+	           		</a>
+		           	<a class="link" target="_blank" href="https://ok.ru/group/53359058288782">
+		               	<i class="fa fa-odnoklassniki icon" aria-hidden="true"></i>
+		           	</a>
+				</div>
 			</div>
         </footer>
     </div>
-</body>
+</b>
 </html>
